@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/silver"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:id="@+id/ll1"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/fivedp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/twentydp"
+            android:fontFamily="@font/karlasemibold"
+            />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottomlayout"
+        android:layout_below="@+id/ll1"
+        android:layout_marginBottom="@dimen/ten"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:onClick="myprofile"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/profile"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/karlaregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="My Profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/lightgrey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="myvehicle"
+        android:background="@color/white"
+
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_my_vehicle" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/karlaregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+
+            android:paddingRight="5dp"
+            android:text="My Vehicle"
+            android:textColor="@color/black"
+
+
+            android:textSize="@dimen/sixteensp"></TextView>
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/lightgrey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:onClick="persnoldocument"
+
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_personal_documents" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/karlaregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+
+            android:paddingRight="5dp"
+            android:text="Personal Documents"
+            android:textColor="@color/black"
+
+
+            android:textSize="@dimen/sixteensp"></TextView>
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/lightgrey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:onClick="favourite"
+        android:id="@+id/mybooking"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_favorite" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/karlaregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+
+            android:paddingRight="5dp"
+            android:text="Favourite"
+            android:textColor="@color/black"
+
+
+            android:textSize="@dimen/sixteensp"></TextView>
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/lightgrey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:id="@+id/mybooking"
+
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_profile_status" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/karlaregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+
+            android:paddingRight="5dp"
+            android:text="Profile Status"
+            android:textColor="@color/black"
+
+
+            android:textSize="@dimen/sixteensp"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end|center_vertical"
+            android:layout_height="match_parent"
+            >
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_marginLeft="@dimen/twentydp"
+
+             android:fontFamily="@font/karlaregular"
+            android:text="Active"
+
+
+            android:layout_marginRight="@dimen/twentydp"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sixteensp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/lightgrey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:id="@+id/mybooking"
+        android:onClick="payment"
+
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_payment" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/karlaregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+
+            android:paddingRight="5dp"
+            android:text="Payment"
+            android:textColor="@color/black"
+
+
+            android:textSize="@dimen/sixteensp"></TextView>
+
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/lightgrey" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELP"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/karlasemibold"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/fivedp"
+        android:layout_marginBottom="@dimen/fivedp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:id="@+id/mybooking"
+        android:onClick="termcondition"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_termsand_condition" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/karlaregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/term"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"/>
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/lightgrey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:onClick="privacy"
+        android:id="@+id/mybooking"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_privacy_policies" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/karlaregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Privacy Policies"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"/>
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/lightgrey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:onClick="about"
+        android:id="@+id/mybooking"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_about" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/karlaregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="About"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"/>
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/lightgrey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:onClick="contact"
+        android:id="@+id/mybooking"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="55dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_contact_us" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/karlaregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Contact us"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"/>
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/lightgrey" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:onClick="logout"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginBottom="@dimen/fivedp"
+                android:fontFamily="@font/karlabold"
+                android:text="Logout"
+                android:textAllCaps="true"
+                android:textSize="@dimen/sixteensp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <ImageView
+
+                android:layout_width="55dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center|left"
+                android:src="@drawable/ic_log_out" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtydp"
+        android:id="@+id/bottomlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/twodp"
+        android:layout_marginRight="@dimen/twodp"
+        android:background="@drawable/bottomnavibackground"
+        android:gravity="center_vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="profile"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_nav_profile_active" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="Profile"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="transaction"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_nav_transaction" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="Transaction"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="news"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_newspaper_inactive" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="News"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="leads"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_nav_leads" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="Leads"
+                android:textSize="@dimen/tweleve" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/eightydp"
+        android:layout_height="@dimen/eightydp"
+        android:layout_alignParentBottom="true"
+        android:onClick="hotelmain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/sixteensp"
+        android:src="@drawable/ic_home_inactive_icon"/>
+
+</RelativeLayout>

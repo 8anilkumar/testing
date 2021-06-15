@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "828936599038",
+    "project_id": "drive13-923bd",
+    "storage_bucket": "drive13-923bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828936599038:android:671ca86ac2dbdfb15f3caf",
+        "android_client_info": {
+          "package_name": "com.eminence.drive13"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828936599038-8v341iopjet31rqf2i9q1i8ll7eba30v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eminence.drive13",
+            "certificate_hash": "13df8194e9d11c536b9d0a48b499d32d278a4798"
+          }
+        },
+        {
+          "client_id": "828936599038-s6ni3mgj9nt1rdugqqf0t97im4ii3cp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxkeD9zSLmhWqDi1tV-0S3CvyXnOEC5_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828936599038-s6ni3mgj9nt1rdugqqf0t97im4ii3cp3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

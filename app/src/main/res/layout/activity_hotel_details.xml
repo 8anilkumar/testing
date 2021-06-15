@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".HotelDetails">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/mainimage"
+        android:layout_height="@dimen/twohundrefifty"
+        android:src="@drawable/hotelimage" />
+
+    <ImageView
+        android:layout_width="@dimen/twentydp"
+        android:layout_height="@dimen/twentydp"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/fourtydp"
+        android:onClick="back"
+        android:src="@drawable/ic_back"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/eightyfive"
+        android:layout_marginTop="@dimen/twohundreddp"
+
+        android:background="@drawable/bottomnavibackground"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/sixtydp"
+                android:layout_height="@dimen/sixtydp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+
+                android:background="@color/white"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:layout_width="@dimen/fiftydep"
+                    android:layout_height="@dimen/fourtydp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:id="@+id/logo"
+                    android:src="@drawable/hotellogo" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.27"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/twentysp"
+                android:id="@+id/name"
+                android:fontFamily="@font/karlabold"
+                android:layout_marginLeft="@dimen/fifteensp"
+                android:text="Loading..."
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteensp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/threedp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn"
+                    android:id="@+id/location"
+                    android:layout_marginLeft="@dimen/threedp"
+                    android:fontFamily="@font/karlaregular"
+                    android:text="Loading..."
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/tweleve" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twentysp"
+                android:layout_marginRight="@dimen/ten"
+                android:src="@drawable/ic_favorite_inactive" />
+
+            <LinearLayout
+                android:layout_width="@dimen/hundreddp"
+                android:layout_height="@dimen/thirtydp"
+                android:id="@+id/call"
+                android:layout_marginTop="@dimen/ten"
+                android:background="@drawable/blueroundbutton"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/eighteen"
+                    android:layout_height="@dimen/eighteen"
+                    android:layout_marginLeft="@dimen/fivedp"
+                    android:src="@drawable/call" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn"
+                    android:layout_marginLeft="@dimen/fivedp"
+                    android:fontFamily="@font/karlaregular"
+                    android:text="Connect Now"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ten" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginRight="@dimen/twentydp"
+        android:layout_marginTop="@dimen/fivedp"
+        android:layout_below="@+id/ll1"
+
+        android:background="@color/lightgrey" />
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/ll1"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_marginTop="@dimen/twentydp"
+            android:fontFamily="@font/karlabold"
+            android:text="About"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteensp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:id="@+id/about"
+            android:layout_marginTop="@dimen/ten"
+            android:fontFamily="@font/karlaregular"
+            android:text="Loading..."
+            android:textColor="@color/grey"
+            android:textSize="@dimen/tweleve" />
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:visibility="visible"
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/fifteensp"
+            android:background="@color/silver"
+            android:layout_gravity="center"
+            android:nestedScrollingEnabled="false"
+            android:scrollbars="none"
+            tools:ignore="UnusedAttribute" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_marginTop="@dimen/ten"
+            android:fontFamily="@font/karlabold"
+            android:text="Customer Support Service"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteensp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_marginTop="@dimen/ten"
+            android:fontFamily="@font/karlaregular"
+            android:text="Customer Representative"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/tweleve" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:id="@+id/ownername"
+            android:fontFamily="@font/karlaregular"
+            android:text="Loading...r"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteensp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_margin="@dimen/fivedp"
+            android:background="@color/lightgrey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_marginTop="@dimen/ten"
+            android:fontFamily="@font/karlaregular"
+            android:text="Customercare Number"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/tweleve" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:id="@+id/number"
+            android:layout_marginTop="@dimen/fivedp"
+            android:fontFamily="@font/karlaregular"
+            android:text="Loading..."
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteensp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_margin="@dimen/fivedp"
+            android:background="@color/lightgrey" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

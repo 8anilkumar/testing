@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Transactiondetails">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:layout_marginBottom="@dimen/fivedp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/karlasemibold"
+            android:text="Transaction"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/ll1"
+        android:background="@color/silver" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/twentydp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:fontFamily="@font/karlaregular"
+            android:id="@+id/choosetext"
+            android:textColor="@color/black"
+            android:text="Select Transaction For"
+            android:textSize="@dimen/sixteensp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/hotelAndRestoranteLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/rb_hotelAndRestorante"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/ic_hotel_active"
+                        android:text="@string/hotel"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/petrolPumpLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/rb_petrolPump"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableLeft="@drawable/ic_petrol_pump_inactive"
+                        android:text="petrol\npump"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+     </LinearLayout>
+
+    </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_margin="@dimen/fivedp"
+                android:background="@color/lightgrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btn"
+                            android:fontFamily="@font/karlaregular"
+                            android:text="City"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/tweleve" />
+
+                        <EditText
+                            android:id="@+id/edit_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:layout_marginTop="@dimen/ten"
+                            android:inputType="textCapSentences"
+                            android:fontFamily="@font/karlaregular"
+                            android:hint="Delhi"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sixteensp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btn"
+                            android:fontFamily="@font/karlaregular"
+                            android:text="Highway Number"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/tweleve" />
+
+                        <EditText
+                            android:id="@+id/edit_highway"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/ten"
+                            android:inputType="textCapSentences"
+                            android:fontFamily="@font/karlaregular"
+                            android:hint="NH 10"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sixteensp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/twentydp"
+        android:visibility="gone"
+        android:id="@+id/choosevalue"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/karlaregular"
+            android:id="@+id/s_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_drop_down_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/twentydp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Location"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@null"
+        android:id="@+id/location"
+        android:inputType="textCapSentences"
+        android:fontFamily="@font/karlaregular"
+        android:hint="Enter Location"
+         android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Name"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:inputType="textCapSentences"
+        android:background="@null"
+        android:id="@+id/name"
+        android:fontFamily="@font/karlaregular"
+        android:hint="Enter name"
+         android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Contact Number "
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@null"
+        android:fontFamily="@font/karlaregular"
+        android:hint="Enter Number"
+        android:inputType="number"
+        android:id="@+id/number"
+        android:maxLength="10"
+         android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Billing Amount"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@null"
+        android:fontFamily="@font/karlaregular"
+        android:hint="Enter Amount"
+        android:inputType="number"
+        android:id="@+id/amount"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+    <LinearLayout
+        android:id="@+id/uploadPhotoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:fontFamily="@font/karlaregular"
+                android:text="Upload Bill Photo"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/tweleve" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/ten"
+                android:fontFamily="@font/karlaregular"
+                android:text="3665GHDY.png"
+                android:id="@+id/billphoto"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteensp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twentyfive"
+            android:layout_weight="0.5"
+            android:gravity="end|center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="@dimen/onetwenty"
+                android:layout_height="@dimen/thirtyfive"
+                android:layout_marginRight="@dimen/twentydp"
+                android:background="@drawable/silverround"
+                android:text="Upload Photo"
+                android:id="@+id/uploadphoto"
+                android:textSize="@dimen/ten" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <CheckBox
+                android:id="@+id/cb_billNotProvide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="Bill not provided"/>
+
+       <LinearLayout
+           android:id="@+id/billNotProvideLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:orientation="horizontal"
+           android:visibility="gone"
+         android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:fontFamily="@font/karlaregular"
+                android:layout_marginTop="@dimen/ten"
+                android:text="Upload Your Selfi"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/tweleve" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/ten"
+                android:fontFamily="@font/karlaregular"
+                android:text="3665GHDY.png"
+                android:id="@+id/txt_selfy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteensp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twentyfive"
+            android:layout_weight="0.5"
+            android:gravity="end|center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="@dimen/onetwenty"
+                android:layout_height="@dimen/thirtyfive"
+                android:layout_marginRight="@dimen/twentydp"
+                android:background="@drawable/silverround"
+                android:text="Upload Selfi"
+                android:id="@+id/uploadselfi"
+                android:textSize="@dimen/ten" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <RelativeLayout
+        android:id="@+id/addTransaction"
+        android:layout_width="@dimen/threehundred"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twentydp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/roundbutton">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/karlaregular"
+            android:text="Add A Transaction"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

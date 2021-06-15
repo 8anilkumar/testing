@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightpink"
+    android:orientation="vertical"
+    tools:context=".Signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:onClick="login"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/thirtyfive">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/karlaregular"
+            android:text="   Log In"
+
+            android:textColor="@color/grey"
+            android:textSize="@dimen/twentytwo" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:fontFamily="@font/karlabold"
+        android:text="Create an Account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Welcome to DRIVE 13 App fill the requirements\nfor new account"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/fourteensp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:layout_marginTop="@dimen/sixtydp"
+        android:fontFamily="@font/karlaregular"
+
+        android:text="Add your full name"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/fourteensp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:layout_marginTop="@dimen/sixteensp"
+        android:layout_marginRight="@dimen/thirtydp"
+        android:inputType="textCapSentences"
+        android:background="@drawable/silverround"
+        android:fontFamily="@font/karlaregular"
+        android:hint="Enter your name"
+        android:id="@+id/name"
+        android:paddingLeft="@dimen/twentysp"
+        android:textColorHint="@color/grey" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:layout_marginTop="@dimen/thirtydp"
+        android:fontFamily="@font/karlaregular"
+
+        android:text="Add your phone numberwe'll send \nyou a verification code so we know you're real "
+        android:textColor="@color/grey"
+        android:textSize="@dimen/fourteensp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:layout_marginTop="@dimen/sixteensp"
+        android:layout_marginRight="@dimen/thirtydp"
+        android:background="@drawable/silverround"
+        android:paddingLeft="@dimen/fivedp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_india" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="0.1"
+            android:fontFamily="@font/karlabold"
+            android:text="+91"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fiftydep"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_weight="0.7"
+            android:id="@+id/number"
+            android:background="@null"
+            android:inputType="number"
+            android:fontFamily="@font/karlaregular"
+            android:hint="1234567890"
+            android:textColorHint="@color/grey"
+
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:onClick="backspase"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_icon_ionic_ios_backspace" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/otpverify"
+        android:layout_width="@dimen/twohundreddp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/eightydp"
+        android:background="@drawable/roundbutton"
+        android:onClick="sendotp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/karlaregular"
+            android:text="Send OTP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

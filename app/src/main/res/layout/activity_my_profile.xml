@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Transactiondetails">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:layout_marginBottom="@dimen/fivedp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/twentyfive"
+            android:layout_height="@dimen/twentyfive"
+            android:onClick="back"
+            android:layout_centerVertical="true"
+            android:tint="@color/black"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/karlabold"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/silver"
+        android:layout_below="@+id/ll1"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/thirtydp"
+        android:background="@null"
+        android:inputType="textCapSentences"
+        android:id="@+id/name"
+        android:fontFamily="@font/karlaregular"
+        android:hint="Full Name"
+        android:padding="@dimen/fivedp"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/sixteensp"
+        android:paddingLeft="@dimen/fivedp"
+        android:weightSum="1"
+        android:layout_marginRight="@dimen/twentydp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_india"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/karlabold"
+            android:layout_weight="0.1"
+            android:layout_below="@+id/btn"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="+91"
+            android:layout_marginLeft="@dimen/ten"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/sixteensp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_height="@dimen/fiftydep"
+            android:hint="1234567890"
+            android:layout_weight="0.7"
+            android:background="@null"
+            android:enabled="false"
+            android:maxLength="10"
+            android:id="@+id/number"
+            android:fontFamily="@font/karlaregular"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_icon_ionic_ios_backspace"
+            />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@null"
+        android:fontFamily="@font/karlaregular"
+        android:hint="johnsmith@email.com"
+        android:inputType="textCapSentences"
+        android:id="@+id/email"
+         android:padding="@dimen/fivedp"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@null"
+        android:fontFamily="@font/karlaregular"
+        android:hint="Address"
+        android:id="@+id/address"
+        android:inputType="textCapSentences"
+        android:padding="@dimen/fivedp"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <RelativeLayout
+        android:id="@+id/save"
+        android:layout_width="@dimen/threehundred"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="@dimen/sixtydp"
+        android:background="@drawable/roundbutton"
+        android:onClick="back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/karlaregular"
+            android:text="Save"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".profile.Regitervehicle">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:layout_marginBottom="@dimen/fivedp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/twentyfive"
+            android:layout_height="@dimen/twentyfive"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:onClick="back"
+            android:src="@drawable/ic_back"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/karlasemibold"
+            android:text="My Vehicle"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/ll1"
+        android:background="@color/silver" />
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Brand Name"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@null"
+        android:id="@+id/brandname"
+        android:inputType="textCapSentences"
+        android:fontFamily="@font/karlaregular"
+        android:hint="BMW"
+         android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Model"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:inputType="textCapSentences"
+        android:background="@null"
+        android:id="@+id/model"
+        android:fontFamily="@font/karlaregular"
+        android:hint="ABC"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Manufacturer"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@null"
+        android:id="@+id/manufracture"
+        android:inputType="textCapSentences"
+        android:fontFamily="@font/karlaregular"
+        android:hint="BMW"
+         android:maxLength="10"
+         android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Number plate"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@null"
+        android:id="@+id/numberplate"
+        android:inputType="textCapSentences"
+        android:fontFamily="@font/karlaregular"
+        android:hint="DL 24 MG 5664"
+         android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Color"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:background="@null"
+        android:fontFamily="@font/karlaregular"
+        android:hint="Red"
+        android:id="@+id/color"
+        android:inputType="textCapSentences"
+         android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:fontFamily="@font/karlaregular"
+                android:text="RC Book"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteensp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/ten"
+                android:fontFamily="@font/karlaregular"
+                android:text="Vehicle Registration"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/sixteensp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/twentyfive"
+            android:layout_weight="0.5"
+            android:gravity="end|center"
+
+           >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tick"
+                android:visibility="gone"
+                   android:layout_marginTop="@dimen/ten"
+                 android:src="@drawable/ic_baseline_check_24"
+                app:tint="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_marginLeft="@dimen/ten"
+                android:id="@+id/rcbookupload"
+                android:layout_marginTop="@dimen/ten"
+                android:fontFamily="@font/karlaregular"
+                android:text="UPLOAD"
+
+                android:layout_marginRight="@dimen/twentydp"
+                android:textColor="@color/green"
+                android:textSize="@dimen/sixteensp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:fontFamily="@font/karlaregular"
+                android:text="Insurance Policy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteensp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/ten"
+                android:fontFamily="@font/karlaregular"
+                android:text="A Driving Licence is an..."
+                android:textColor="@color/grey"
+                android:textSize="@dimen/sixteensp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/twentyfive"
+            android:layout_weight="0.5"
+            android:gravity="end|center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tick2"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/ten"
+                android:src="@drawable/ic_baseline_check_24"
+                app:tint="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_marginLeft="@dimen/ten"
+                android:id="@+id/insuarnecpolicy"
+                android:layout_marginTop="@dimen/ten"
+                android:fontFamily="@font/karlaregular"
+                android:text="UPLOAD"
+
+                android:layout_marginRight="@dimen/twentydp"
+                android:textColor="@color/green"
+                android:textSize="@dimen/sixteensp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <RelativeLayout
+        android:id="@+id/otpverify"
+        android:layout_width="@dimen/threehundred"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/twentydp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/sixtydp"
+        android:background="@drawable/roundbutton"
+        android:onClick="Addvehicle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/karlaregular"
+            android:text="Register"
+            android:id="@+id/registertext"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Leads">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:id="@+id/ll1"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/fivedp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duty"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/twentydp"
+            android:fontFamily="@font/karlasemibold"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/ll1"
+        android:id="@+id/view1"
+        android:background="@color/silver" />
+
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:visibility="visible"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_below="@+id/view1"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@+id/bottomlayout"
+        android:layout_gravity="center"
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="none"
+        tools:ignore="UnusedAttribute" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtydp"
+        android:id="@+id/bottomlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/twodp"
+        android:layout_marginRight="@dimen/twodp"
+        android:background="@drawable/bottomnavibackground"
+        android:gravity="center_vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="profile"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_nav_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="Profile"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="transaction"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_nav_transaction" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="Transaction"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="news"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_newspaper_inactive" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="News"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="leads"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_nav_leads_active" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="Leads"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/eightydp"
+        android:layout_height="@dimen/eightydp"
+        android:layout_alignParentBottom="true"
+        android:onClick="hotelmain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/sixteensp"
+        android:src="@drawable/ic_home_inactive_icon" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+   android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/eightydp"
+        android:onClick="transactionview"
+        android:id="@+id/layout"
+        android:background="@color/white"
+        android:weightSum="1"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/karlaregular"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:id="@+id/name"
+            android:paddingRight="5dp"
+            android:text="Toyota Plus"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_marginTop="@dimen/fifteensp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteensp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/karlaregular"
+            android:layout_below="@+id/btn"
+            android:id="@+id/number"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:text="DL-xy 6767 ddy"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/tweleve"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.75"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+
+                android:layout_width="@dimen/seventy"
+                android:layout_height="@dimen/sixtydp"
+                android:layout_gravity="center|left"
+                 android:id="@+id/image"
+                android:layout_marginRight="@dimen/twentydp"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/lightgrey" />
+
+</LinearLayout>

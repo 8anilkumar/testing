@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/lightpink"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".OTPScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/karlabold"
+            android:text="Verify your Phone Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"
+            android:textStyle="bold" />
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/karlaregular"
+            android:layout_below="@+id/btn"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:textAlignment="center"
+            android:text="Enter your Otp code here"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/fifteensp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_width="50dp"
+                android:fontFamily="@font/karlaregular"
+                android:layout_height="@dimen/fiftydep"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/silvercircle"
+                android:inputType="number"
+                android:maxLength="1"
+
+                />
+
+            <EditText
+                android:id="@+id/ed2"
+                android:layout_width="@dimen/fiftydep"
+                android:layout_height="@dimen/fiftydep"
+                android:background="@drawable/silvercircle"
+                android:fontFamily="@font/karlaregular"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:inputType="number"
+
+                android:maxLength="1"
+
+                />
+
+            <EditText
+                android:id="@+id/ed3"
+                android:layout_width="@dimen/fiftydep"
+                android:layout_height="@dimen/fiftydep"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/karlaregular"
+                android:background="@drawable/silvercircle"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+
+                />
+
+            <EditText
+                android:id="@+id/ed4"
+                android:fontFamily="@font/karlaregular"
+                android:layout_width="@dimen/fiftydep"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:textColor="@color/white"
+                android:layout_height="@dimen/fiftydep"
+                android:background="@drawable/silvercircle"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/karlaregular"
+            android:layout_below="@+id/btn"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/thirtydp"
+            android:textAlignment="center"
+            android:text="Don't you recive any code"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/fifteensp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/karlabold"
+            android:text="RESEND NEW CODE"
+            android:onClick="Resend"
+            android:textColor="@color/golden"
+            android:textSize="@dimen/fourteensp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="@dimen/twohundreddp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="verify"
+            android:id="@+id/otpverify"
+            android:layout_marginTop="@dimen/thirtydp"
+            android:background="@drawable/roundbutton"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true"
+                android:text="Verify"
+                android:fontFamily="@font/karlaregular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteensp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

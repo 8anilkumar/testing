@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="please_wait">Please Wait</string>
+    <string name="term"><![CDATA[Term & Conditions]]></string>
+    <string name="date"><![CDATA[Date & Time of Trip]]></string>
+</resources>

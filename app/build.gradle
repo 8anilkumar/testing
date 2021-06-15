@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.eminence.drive13"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 8
+        versionName "1.7"
+
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.karumi:dexter:4.2.0'
+    implementation 'com.github.MdFarhanRaja:SearchableSpinner:2.0'
+    implementation 'com.github.rubensousa:bottomsheetbuilder:1.6.1'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.github.javiersantos:BottomDialogs:1.2.1'
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+    implementation('com.google.firebase:firebase-messaging:21.0.1') {
+        exclude group: 'com.google.guava', module: 'guava-jdk5'
+    }
+    implementation('com.google.firebase:firebase-core:18.0.0') {
+        exclude group: 'com.google.guava', module: 'guava-jdk5'
+    }
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+
+
+    //=====   SDP LIBRARY   =====
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+}
+apply plugin: 'com.google.gms.google-services'

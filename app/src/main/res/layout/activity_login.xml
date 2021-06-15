@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/lightpink"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:onClick="signup"
+        android:layout_margin="@dimen/thirtyfive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/karlaregular"
+            android:layout_below="@+id/btn"
+             android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="   Sign Up"
+
+            android:textColor="@color/grey"
+            android:textSize="@dimen/twentytwo"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karlabold"
+        android:layout_below="@+id/btn"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Log In"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/twentyfive"
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karlaregular"
+        android:layout_below="@+id/btn"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ten"
+        android:textAlignment="center"
+        android:text="Add your phone numberwe'll send \nyou a verification code so we know you're real "
+        android:textColor="@color/grey"
+        android:textSize="@dimen/fourteensp"
+        />
+    <LinearLayout
+        android:background="@drawable/silverround"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:layout_marginTop="@dimen/sixteensp"
+        android:paddingLeft="@dimen/fivedp"
+        android:weightSum="1"
+        android:layout_marginRight="@dimen/thirtydp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_india"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/karlabold"
+            android:layout_weight="0.1"
+            android:layout_below="@+id/btn"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="+91"
+            android:layout_marginLeft="@dimen/ten"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/sixteensp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_height="@dimen/fiftydep"
+            android:hint="1234567890"
+            android:layout_weight="0.7"
+            android:background="@null"
+            android:id="@+id/number"
+            android:inputType="number"
+            android:fontFamily="@font/karlaregular"
+            android:textColorHint="@color/grey"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_icon_ionic_ios_backspace"
+            />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/twohundreddp"
+        android:layout_height="50dp"
+        android:onClick="sendotp"
+        android:layout_gravity="center"
+        android:id="@+id/otpverify"
+        android:layout_marginTop="@dimen/sixtydp"
+        android:background="@drawable/roundbutton"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:text="Send OTP"
+            android:fontFamily="@font/karlaregular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteensp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

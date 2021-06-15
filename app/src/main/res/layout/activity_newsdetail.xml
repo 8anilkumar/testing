@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Newsdetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:id="@+id/relative"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/fivedp"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/twentydp"
+            android:layout_height="@dimen/twentydp"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:src="@drawable/ic_back"
+            app:tint="@color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News Feed"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/twentydp"
+            android:fontFamily="@font/karlasemibold"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/image"
+        android:layout_below="@+id/relative"
+        android:layout_height="@dimen/twohundreddp"
+        android:src="@drawable/hotelimage" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_230dp"
+        android:background="@drawable/bottomnavibackground"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/karlabold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/titile"
+                    android:maxLength="75"
+                    android:paddingRight="5dp"
+                    android:text="School Reopening News : The School is reopening from 10th of july in 2021"
+                    android:layout_marginTop="@dimen/twentydp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteensp"></TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:paddingRight="@dimen/fivedp"
+                android:layout_marginTop="@dimen/fivedp"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/karlaregular"
+                    android:layout_below="@+id/btn"
+                     android:id="@+id/date"
+                    android:text="10 min ago"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/fourteensp"
+                    />
+
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_above="@+id/bottomlayout"
+                android:layout_below="@+id/ll1"
+                android:layout_marginBottom="@dimen/ten"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="@dimen/ten"
+                    android:fontFamily="@font/karlaregular"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real Add your phone numberwe'll send you a verification code so we know you're real"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/fourteensp" />
+            </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

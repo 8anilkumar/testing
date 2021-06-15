@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".profile.Payments">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:layout_marginBottom="@dimen/fivedp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/twentyfive"
+            android:layout_height="@dimen/twentyfive"
+            android:layout_centerVertical="true"
+            android:tint="@color/black"
+            android:onClick="back"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/karlabold"
+            android:text="Payment"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/silver"
+        android:layout_below="@+id/ll1"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/karlaregular"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:text="Payment UPI Detail"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/karlaregular"
+        android:layout_marginTop="@dimen/thirtydp"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:text="Phonepe"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="@dimen/threehundred"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/karlaregular"
+        android:background="@drawable/silverround2"
+        android:layout_marginTop="@dimen/fivedp"
+         android:layout_marginLeft="@dimen/thirtydp"
+        android:text="Loading..."
+        android:paddingLeft="@dimen/twentydp"
+        android:id="@+id/phonepay"
+        android:paddingTop="@dimen/sevendp"
+        android:paddingBottom="@dimen/sevendp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fourteensp"
+        android:textStyle="bold" />
+
+
+    <View
+         android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgrey"
+        android:layout_marginTop="@dimen/twentydp"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginRight="@dimen/twentydp"
+        android:layout_below="@+id/ll1"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/karlaregular"
+        android:layout_marginTop="@dimen/thirtydp"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:text="Google Pay"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="@dimen/threehundred"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/karlaregular"
+        android:background="@drawable/silverround2"
+        android:layout_marginTop="@dimen/fivedp"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:text="Loading..."
+        android:paddingLeft="@dimen/twentydp"
+        android:id="@+id/googlepay"
+        android:paddingTop="@dimen/sevendp"
+        android:paddingBottom="@dimen/sevendp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fourteensp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgrey"
+        android:layout_marginTop="@dimen/twentydp"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_below="@+id/ll1"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/karlaregular"
+        android:layout_marginTop="@dimen/thirtydp"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:text="Upload payment receipt Screenshot"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/twentydp"
+                android:fontFamily="@font/karlaregular"
+                android:text="Upload Screenshot"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/tweleve" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_marginLeft="@dimen/twentydp"
+                android:layout_marginTop="@dimen/ten"
+                android:fontFamily="@font/karlaregular"
+                android:text="phonepe.payment.png"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteensp" />
+         </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twentyfive"
+            android:layout_weight="0.5"
+            android:gravity="end|center"
+
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="@dimen/onetwenty"
+                android:layout_height="@dimen/thirtyfive"
+                android:layout_marginRight="@dimen/twentydp"
+                android:id="@+id/uploadphoto"
+                android:background="@drawable/silverround"
+                android:text="Upload Photo"
+                android:textSize="@dimen/ten" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_margin="@dimen/ten"
+        android:background="@color/lightgrey" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/karlaregular"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:text="Help"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/thirtydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:id="@+id/helpno"
+        android:fontFamily="@font/karlaregular"
+        android:text="Helpline Number : Loading..."
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+
+</LinearLayout>

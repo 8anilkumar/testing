@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Leaddetails">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fiftydep"
+        android:id="@+id/relative"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/fivedp"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/twentydp"
+            android:layout_height="@dimen/twentydp"
+            android:layout_marginLeft="@dimen/twentydp"
+            android:onClick="back"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            app:tint="@color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#12425252"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/twentydp"
+            android:fontFamily="@font/karlasemibold"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hundreddp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        android:weightSum="1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.37"
+            app:cardUseCompatPadding="true"
+            android:layout_margin="@dimen/ten"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+
+                    android:layout_width="@dimen/fiftydep"
+                    android:layout_height="@dimen/fourtydp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="@dimen/twentydp"
+                    android:layout_marginRight="@dimen/twentydp"
+                    android:src="@drawable/ic_drive13logo_welcome" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                 android:fontFamily="@font/karlaregular"
+                android:text="Trip Number #1233344"
+                android:id="@+id/number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteensp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.38"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/fivedp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/ten"
+                android:fontFamily="@font/karlaregular"
+                android:text="12:30 PM"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/tweleve" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn"
+                android:layout_marginTop="@dimen/fivedp"
+                android:id="@+id/createddate"
+                android:fontFamily="@font/karlaregular"
+                android:text="30-01-2021"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:fontFamily="@font/karlaregular"
+        android:text="@string/date"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/fivedp"
+        android:id="@+id/datetime"
+        android:fontFamily="@font/karlaregular"
+        android:text="9:00 AM on Feb-2021"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="From to Destination"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:id="@+id/fromtodes"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:fontFamily="@font/karlaregular"
+        android:text="            Delhi             to          Uttar Pradesh"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Vehicle Required"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:id="@+id/clientname"
+        android:fontFamily="@font/karlaregular"
+        android:text="Mr. Singh"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Purpose"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:id="@+id/purpose"
+        android:fontFamily="@font/karlaregular"
+        android:text="Purpose"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/twentydp"
+        android:fontFamily="@font/karlaregular"
+        android:text="Customer Support "
+        android:textColor="@color/grey"
+        android:textSize="@dimen/tweleve" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginLeft="@dimen/twentydp"
+        android:layout_marginTop="@dimen/ten"
+        android:fontFamily="@font/karlaregular"
+        android:text="9990987099"
+        android:id="@+id/clientnumer"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sixteensp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="@dimen/fivedp"
+        android:background="@color/lightgrey" />
+
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/threehundred"
+        android:layout_height="40dp"
+        android:onClick="back"
+        android:layout_gravity="center"
+        android:id="@+id/otpverify"
+        android:layout_marginTop="@dimen/sixtydp"
+        android:background="@drawable/roundbutton"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+            android:text="Back"
+            android:fontFamily="@font/karlaregular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/eighteen"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

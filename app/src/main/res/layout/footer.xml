@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/bottomlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/twodp"
+        android:layout_marginRight="@dimen/twodp"
+        android:background="@drawable/bottomnavibackground"
+        android:gravity="center_vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="profile"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_nav_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="Profile"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="transaction"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_nav_transaction" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="Transaction"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="news"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_newspaper_inactive" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="News"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/sixtydp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="leads"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_nav_leads" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karlaregular"
+                android:text="Leads"
+                android:textSize="@dimen/tweleve" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

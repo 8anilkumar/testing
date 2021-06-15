@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Drive 13</string>
+    <string name="term"><![CDATA[Term & Conditions]]></string>
+    <string name="date"><![CDATA[Date & Time of Trip]]></string>
+    <string name="insuarnace"><![CDATA[Insurance & Others]]></string>
+    <string name="workshop"><![CDATA[Guides & Showrooms]]></string>
+    <string name="hotel"><![CDATA[Hotel & Resturants]]></string>
+    <string name="tour_packages"><![CDATA[Tour & Packages]]></string>
+
+</resources>
