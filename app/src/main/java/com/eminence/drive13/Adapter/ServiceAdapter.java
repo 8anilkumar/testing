@@ -85,67 +85,38 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.MyViewHo
                       JsonObjectRequest stringRequest = new JsonObjectRequest(Request.Method.POST, url, parameters, new Response.Listener<JSONObject>() {
                           @Override
                           public void onResponse(JSONObject response) {
-
                               try {
                                   JSONObject obj = new JSONObject(String.valueOf(response));
                                    String r_code = obj.getString("status");
-                                  String fav = obj.getString("fav");
-                                  //Toast.makeText(Selctservice.this, ""+response, Toast.LENGTH_SHORT).show();
+                                   String fav = obj.getString("fav");
 
                                   if (r_code.equalsIgnoreCase("1")) {
-
                                       if (fav.equalsIgnoreCase("1"))
                                       {
                                           holder.favorite.setImageResource(R.drawable.ic_nav_favourite_active);
-
-                                      }
-                                      else
-                                      {
+                                      } else {
                                           holder.favorite.setImageResource(R.drawable.ic_favorite_inactive);
-
                                       }
                                   }
 
-
-                                  //Toast.makeText(MyProfile.this, ""+obj.getString("message"), Toast.LENGTH_SHORT).show();
-
-
-
-
-
-
                               } catch (Exception e) {
-
-
                                   e.printStackTrace();
                                   Toast.makeText(context, "" + e, Toast.LENGTH_SHORT).show();
-
-
                               }
-                              // Toast.makeText(Login.this, ""+userid, Toast.LENGTH_SHORT).show();
-
-
                           }
                       }, new Response.ErrorListener() {
                           @Override
                           public void onErrorResponse(VolleyError error) {
-
-
                               Toast.makeText(context, "" + error, Toast.LENGTH_SHORT).show();
-
-
                           }
                       }) {
-
                       };
+
                       requestQueue.add(stringRequest);
 
                   }
               });
-
-
-
-
+              
         if (subcat.get(position).getFavourite().equalsIgnoreCase("1"))
         {
             holder.favorite.setImageResource(R.drawable.ic_nav_favourite_active);

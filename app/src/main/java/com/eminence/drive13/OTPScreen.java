@@ -13,6 +13,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -40,6 +41,7 @@ public class OTPScreen extends AppCompatActivity {
     String number,otp,name;
     String token;
     boolean doubleBackToExitPressedOnce = false;
+    ProgressBar mainProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,10 @@ public class OTPScreen extends AppCompatActivity {
         ed2 = findViewById(R.id.ed2);
         ed3 = findViewById(R.id.ed3);
         ed4 = findViewById(R.id.ed4);
+
+        mainProgressBar = findViewById(R.id.mainProgressBar);
+
+        signUpUrl();
 
         FirebaseInstanceId.getInstance().getInstanceId()
                 .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
@@ -153,6 +159,7 @@ public class OTPScreen extends AppCompatActivity {
 
 
     public void Otpverify() {
+        mainProgressBar.setVisibility(View.VISIBLE);
         String url = baseurl + "driver_otp_verify.php";
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(OTPScreen.this);
         //  String username = sharedPreferences.getString("username", null);
@@ -196,6 +203,7 @@ public class OTPScreen extends AppCompatActivity {
 
                         Intent intent=new Intent(OTPScreen.this,HotelMain.class);
                         startActivity(intent);
+
                         finish();
 
                     } else {
@@ -300,7 +308,6 @@ public class OTPScreen extends AppCompatActivity {
         }else
         {
 
-            signUpUrl();
 
         }
     }

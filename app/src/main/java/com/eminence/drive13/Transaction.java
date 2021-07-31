@@ -46,8 +46,6 @@ public class Transaction extends AppCompatActivity {
 
     public void submit() {
         String url = baseurl + "driver_transaction_list.php";
-        SharedPreferences sharedPreferences = PreferenceManager
-                .getDefaultSharedPreferences(Transaction.this);
         YourPreference yourPrefrence = YourPreference.getInstance(getApplicationContext());
         String id = yourPrefrence.getData("id");
         RequestQueue requestQueue;

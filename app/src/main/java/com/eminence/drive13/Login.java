@@ -42,6 +42,7 @@ public class Login extends AppCompatActivity {
         number=findViewById(R.id.number);
 
         GPSTracker mGPS = new GPSTracker(getApplicationContext());
+
         Double lat,lng;
 
         if (mGPS.canGetLocation) {
@@ -49,9 +50,8 @@ public class Login extends AppCompatActivity {
             lat = mGPS.getLatitude();
             lng = mGPS.getLongitude();
             getCompleteAddressString(lat,lng);
-        }
-        else
-        {
+
+        } else {
             Toast.makeText(mGPS, "location not Available", Toast.LENGTH_SHORT).show();
         }
 
@@ -75,15 +75,9 @@ public class Login extends AppCompatActivity {
         }
     }
 
-
-
-
     public void submit() {
-
-
         String url = baseurl + "driver_login.php";
-        SharedPreferences sharedPreferences = PreferenceManager
-                .getDefaultSharedPreferences(Login.this);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(Login.this);
 
         //  String username = sharedPreferences.getString("username", null);
         RequestQueue requestQueue;
@@ -91,10 +85,7 @@ public class Login extends AppCompatActivity {
 
         Map<String, String> params = new HashMap();
         params.put("mobile", number.getText().toString());
-
-
         JSONObject parameters = new JSONObject(params);
-
 
         JsonObjectRequest stringRequest = new JsonObjectRequest(Request.Method.POST, url, parameters, new Response.Listener<JSONObject>() {
             @Override
